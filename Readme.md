@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Даниил Паршутин](https://up.htmlacademy.ru/htmlcss/30/user/1599015).
-* Наставник: [Александр Михотин] (https://htmlacademy.ru/profile/id621939).
+* Наставник: [Александр Михотин](https://htmlacademy.ru/profile/id621939).
 
 ---
 
