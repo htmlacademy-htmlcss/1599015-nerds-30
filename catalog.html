@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Каталог</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="">
+          <img
+            src="https://via.placeholder.com/159x65"
+            width="159"
+            height="65"
+            alt="logo"
+          />
+        </a>
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <a href="#">Корзина</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Магазин готовых шаблонов</h1>
+      <section>
+        <h2>Фильтр товаров</h2>
+        <form method="GET" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <input id="price" type="range" min="0" max="15000" />
+            <label for="min-price">
+              от <input type="text" id="min-price" name="price" value="0"
+            /></label>
+            <label for="max-price"
+              >до <input type="text" id="max-price" name="price" value="15000"
+            /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li>
+                <input
+                  id="filter-responsive"
+                  type="radio"
+                  name="grid"
+                  checked
+                />
+                <label for="responsive">Адаптивная</label>
+              </li>
+              <li>
+                <input id="filter-fix" type="radio" name="grid" />
+                <label for="filter-fix">Фиксированная</label>
+              </li>
+              <li>
+                <input id="filter-elastic" type="radio" name="grid" />
+                <label for="filter-elastic">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li>
+                <input id="slider" type="checkbox" name="features" checked />
+                <label for="slider">Слайдер</label>
+              </li>
+              <li>
+                <input id="advantage" type="checkbox" name="features" />
+                <label for="advantage">Блок преимуществ</label>
+              </li>
+
+              <li>
+                <input id="news" type="checkbox" name="features" checked />
+                <label for="news">Новости</label>
+              </li>
+              <li>
+                <input id="gallery" type="checkbox" name="features" />
+                <label for="gallery">Галерея</label>
+              </li>
+              <li>
+                <input id="basket" type="checkbox" name="features" />
+                <label for="basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
+      <section>
+        <h3>Сортировать:</h3>
+        <ul>
+          <li>ПО ЦЕНЕ</li>
+          <li>ПО ТИПУ</li>
+          <li>ПО НАЗВАНИЮ</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Макеты</h2>
+        <ul>
+          <li>
+            <img
+              src="https://via.placeholder.com/360x620"
+              width="360"
+              height="620"
+              alt="sedona"
+            />
+            <h3>SEDONA</h3>
+            <p>Информационный сайт для туристов</p>
+            <button type="submit">9900 ₽</button>
+          </li>
+          <li>
+            <img
+              src="https://via.placeholder.com/360x620"
+              width="360"
+              height="620"
+              alt="pink"
+            />
+            <h3>PINK APP</h3>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <button type="submit">9900 ₽</button>
+          </li>
+          <li>
+            <img
+              src="https://via.placeholder.com/360x620"
+              width="360"
+              height="620"
+              alt="borodinsku"
+            />
+            <h3>Barbershop</h3>
+            <p>Сайт салона красоты.Для мужчин, да.</p>
+            <button type="submit">9900 ₽</button>
+          </li>
+          <li>
+            <img
+              src="https://via.placeholder.com/360x620"
+              width="360"
+              height="620"
+              alt="mishka"
+            />
+            <h3>MISHKA</h3>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <button type="submit">9900 ₽</button>
+          </li>
+          <li>
+            <img
+              src="https://via.placeholder.com/360x620"
+              width="360"
+              height="620"
+              alt="aplus"
+            />
+            <h3>A Plus</h3>
+            <p>Лендинг курсов повышения квалификации</p>
+            <button type="submit">9900 ₽</button>
+          </li>
+          <li>
+            <img
+              src="https://via.placeholder.com/360x620"
+              width="360"
+              height="620"
+              alt="kvas"
+            />
+            <h3>КВАСТ</h3>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <button type="submit">9900 ₽</button>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Следующая</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <img
+        src="https://via.placeholder.com/1440x416"
+        width="1440"
+        height="416"
+        alt="map"
+      />
+      <img
+        src="https://via.placeholder.com/231x190"
+        width="231"
+        height="190"
+        alt="mark"
+      />
+      <h3>NЁRDS DESIGN STUDIO</h3>
+      <p>
+        191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812)
+        275-75-75
+      </p>
+      <button type="submit">Напишите нам</button>
+      <div>
+        <ul>
+          <li>
+            <a href="#">
+              <img
+                src="https://via.placeholder.com/81x81"
+                width="81"
+                height="81"
+                alt="vk"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="https://via.placeholder.com/81x81"
+                width="81"
+                height="81"
+                alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="https://via.placeholder.com/81x81"
+                width="81"
+                height="81"
+                alt="instagram"
+            /></a>
+          </li>
+        </ul>
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+    <section>
+      <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label for="name">Ваше имя:</label>
+          <input
+            id="name"
+            type="text"
+            name="infoname"
+            placeholder="Имя Фамилия"
+          />
+        </p>
+        <p>
+          <label for="email">Ваш email:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+          />
+        </p>
+        <p>
+          <label for="text">Текст письма:</label>
+          <input
+            id="text"
+            type="text"
+            name="message"
+            placeholder="В свободной форме"
+          />
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="submit">Закрыть</button>
+    </section>
+  </body>
+</html>
