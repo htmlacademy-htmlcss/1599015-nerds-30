@@ -7,7 +7,7 @@
   <body>
     <header>
       <nav>
-        <a href="">
+        <a href="index.html">
           <img
             src="https://via.placeholder.com/159x65"
             width="159"
@@ -16,7 +16,7 @@
           />
         </a>
         <ul>
-          <li><a href="#">Студия</a></li>
+          <li><a href="index.html">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
@@ -31,11 +31,11 @@
         <form method="GET" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость:</legend>
-            <input id="min-price" type="range" min="0" max="15000" />
+            <input id="price" type="range" min="0" max="15000" />
             <label for="min-price">от</label>
-            <input type="text" id="min-price" name="price" value="0" />
+            <input type="number" id="min-price" name="price" value="0" />
             <label for="max-price">до</label>
-            <input type="text" id="max-price" name="price" value="15000" />
+            <input type="number" id="max-price" name="price" value="15000" />
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
@@ -47,7 +47,7 @@
                   name="grid"
                   checked
                 />
-                <label for="responsive">Адаптивная</label>
+                <label for="filter-responsive">Адаптивная</label>
               </li>
               <li>
                 <input id="filter-fix" type="radio" name="grid" />
@@ -63,24 +63,24 @@
             <legend>Особенности:</legend>
             <ul>
               <li>
-                <input id="slider" type="checkbox" name="features" checked />
+                <input id="slider" type="checkbox" name="slider" checked />
                 <label for="slider">Слайдер</label>
               </li>
               <li>
-                <input id="advantage" type="checkbox" name="features" />
+                <input id="advantage" type="checkbox" name="advantage" />
                 <label for="advantage">Блок преимуществ</label>
               </li>
 
               <li>
-                <input id="news" type="checkbox" name="features" checked />
+                <input id="news" type="checkbox" name="news" checked />
                 <label for="news">Новости</label>
               </li>
               <li>
-                <input id="gallery" type="checkbox" name="features" />
+                <input id="gallery" type="checkbox" name="gallery" />
                 <label for="gallery">Галерея</label>
               </li>
               <li>
-                <input id="basket" type="checkbox" name="features" />
+                <input id="basket" type="checkbox" name="basket" />
                 <label for="basket">Корзина</label>
               </li>
             </ul>
@@ -108,7 +108,7 @@
             />
             <h3>SEDONA</h3>
             <p>Информационный сайт для туристов</p>
-            <button type="submit">9900 ₽</button>
+            <button type="button">9900 ₽</button>
           </li>
           <li>
             <img
@@ -119,7 +119,7 @@
             />
             <h3>PINK APP</h3>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <button type="submit">9900 ₽</button>
+            <button type="button">9900 ₽</button>
           </li>
           <li>
             <img
@@ -130,7 +130,7 @@
             />
             <h3>Barbershop</h3>
             <p>Сайт салона красоты.Для мужчин, да.</p>
-            <button type="submit">9900 ₽</button>
+            <button type="button">9900 ₽</button>
           </li>
           <li>
             <img
@@ -141,7 +141,7 @@
             />
             <h3>MISHKA</h3>
             <p>Интернет-магазин вязаных игрушек</p>
-            <button type="submit">9900 ₽</button>
+            <button type="button">9900 ₽</button>
           </li>
           <li>
             <img
@@ -152,7 +152,7 @@
             />
             <h3>A Plus</h3>
             <p>Лендинг курсов повышения квалификации</p>
-            <button type="submit">9900 ₽</button>
+            <button type="button">9900 ₽</button>
           </li>
           <li>
             <img
@@ -163,7 +163,7 @@
             />
             <h3>КВАСТ</h3>
             <p>Промо-сайт производителя крафтового кваса</p>
-            <button type="submit">9900 ₽</button>
+            <button type="button">9900 ₽</button>
           </li>
         </ul>
         <ul>
@@ -192,7 +192,7 @@
         191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812)
         275-75-75
       </p>
-      <button type="submit">Напишите нам</button>
+      <button type="button">Напишите нам</button>
       <div>
         <ul>
           <li>
@@ -259,7 +259,7 @@
         </p>
         <button type="submit">Отправить</button>
       </form>
-      <button type="submit">Закрыть</button>
+      <button type="button">Закрыть</button>
     </section>
   </body>
 </html>
