@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   src: url("../fonts/roboto.woff2") format("woff2"),
     url("../fonts/roboto.woff") format("woff");
   font-weight: 500;
@@ -22,7 +22,6 @@
   --basic-white: #ffffff;
   --basic-dark: #4d4d4d;
   --basic-light-dark: #888888;
-  --basic-dark: #283136;
   --basic-grey: #a6a6a6;
   --basic-light-grey: #e1e1e1;
   --grey: #444444;
@@ -33,7 +32,7 @@
   min-width: 1440px;
   margin: 0;
   padding: 0;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -67,12 +66,16 @@ img {
 .main-header-logo:active {
   opacity: 0.2;
 }
-.basket-navigation a:hover,
+.basket-navigation:hover,
 .site-navigation a:hover {
   color: var(--basic-red);
 }
+.site-navigation a:focus,
+.basket-navigation:focus {
+  border-bottom: 2px solid var(--basic-dark-red);
+}
 
-.basket-navigation a:active,
+.basket-navigation:active,
 .site-navigation a:active {
   color: var(--basic-black);
   opacity: 30%;
@@ -86,7 +89,7 @@ img {
   border: 0;
   border-radius: 3px;
   padding: 10px;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -122,30 +125,30 @@ img {
 .about-us {
   background-color: var(--basic-light);
 }
-.about-us-image1 {
+.about-us-item1 {
   width: 760px;
   height: 431px;
   background-image: url(../img/nerds_index_slide1.png);
 }
-.about-us-image2 {
+.about-us-item2 {
   width: 760px;
   height: 431px;
   background-image: url(../img/nerds_index_slide2.png);
 }
-.about-us-image3 {
+.about-us-item3 {
   width: 760px;
   height: 431px;
   background-image: url(../img/nerds_index_slide3.png);
 }
 
 .about-us-item h2 {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
 .about-us-item p {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -159,21 +162,21 @@ img {
 
 .services-list {
   list-style: none;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 
-.services-img1 {
+.services-item1 {
   background-image: url("../img/illustration_1.jpg");
   width: 300px;
   height: 146px;
 }
-.services-img2 {
+.services-item2 {
   background-image: url("../img/illustration_2.jpg");
   width: 300px;
   height: 146px;
 }
-.services-img3 {
+.services-item3 {
   background-image: url("../img/illustration_3.jpg");
   width: 300px;
   height: 146px;
@@ -189,31 +192,35 @@ img {
 }
 
 /* Features */
-.features-1 {
-  font-family: Roboto;
+.features {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
 }
-.features-1 h2 {
+.features h2 {
   font-size: 45px;
   line-height: 45px;
 }
 
-.features-1-list {
-  list-style-image: url(../img/list_line.jpg);
+.features-item {
+  list-style-type: none;
+}
+.features-item::before {
+  content:"	\2015" ;
+  color: var(--basic-red);
 }
 
 /* Features table */
 
-.features-2-heading {
+.features-heading {
   font-weight: bold;
   text-transform: uppercase;
 }
-.features-2-list span {
+.features-table span {
   vertical-align: super;
 }
-.features-2-list td {
+.features-table td {
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
@@ -239,33 +246,30 @@ img {
   list-style: none;
 }
 
-.social-button.vk::before {
+.social-link.vk::before {
   content: url("../img/vk_icon.svg");
 }
-.social-button.vk {
+.social-link.vk {
   text-align: center;
 }
-.social-button.fb::before {
+.social-link.fb::before {
   content: url("../img/fb_icon.svg");
 }
-.social-button.instagram::before {
+.social-link.instagram::before {
   content: url("../img/insta_icon.svg");
 }
-.social-button-block {
+.social-link-block {
   background-color: var(--basic-light);
   background-position: center;
   border-radius: 50%;
   width: 81px;
   height: 81px;
 }
-.social-logo {
-  text-align: center;
-  padding-top: 30px;
-}
-.social-button-block:hover {
+
+.social-link-block:hover {
   background-color: var(--basic-light-dark-red);
 }
-.social-button-block:active {
+.social-link-block:active {
   background-color: var(--basic-dark-red);
 }
 /* Form*/
@@ -277,18 +281,22 @@ img {
   color: var(--basic-black);
   border-color: var(--basic-black);
 }
+.popup input:invalid {
+  color: var(--basic-red);
+  border-color: var(--basic-red);
+}
 
 /* Footer */
 
 .footer-discount h2 {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 36px;
   line-height: 36px;
 }
 
 .footer-discount p {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
