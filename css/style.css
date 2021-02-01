@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Tahoma", sans-serif;
   src: url("../fonts/roboto.woff2") format("woff2"),
     url("../fonts/roboto.woff") format("woff");
   font-weight: 500;
@@ -25,6 +25,8 @@
   --basic-grey: #a6a6a6;
   --basic-light-grey: #e1e1e1;
   --grey: #444444;
+  --basic-dark-grey: #dfdfdf;
+  --basic-opacity-grey: #d5d5d5;
 }
 
 /* Global */
@@ -32,7 +34,7 @@
   min-width: 1440px;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -89,11 +91,12 @@ img {
   border: 0;
   border-radius: 3px;
   padding: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  
 }
 
 .button.green {
@@ -120,6 +123,30 @@ img {
 .button:active {
   background-color: var(--basic-dark-red);
 }
+.button:active {
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  
+}
+.button{
+  outline: none;
+}
+.button.grey {
+  background-color: var(--basic-light);
+  color: var(--basic-black);
+}
+.button.grey:hover {
+  background-color: var(--basic-dark-grey);
+}
+.button.grey:active {
+  background: var(--basic-opacity-grey);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.pagination-list {
+  list-style: none;
+  width: 200px;
+}
+
 
 /* About us */
 .about-us {
@@ -142,13 +169,13 @@ img {
 }
 
 .about-us-item h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
 .about-us-item p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -162,7 +189,7 @@ img {
 
 .services-list {
   list-style: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 500;
 }
 
@@ -193,7 +220,7 @@ img {
 
 /* Features */
 .features {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -207,7 +234,7 @@ img {
   list-style-type: none;
 }
 .features-item::before {
-  content:"	\2015" ;
+  content: "	\2015";
   color: var(--basic-red);
 }
 
@@ -221,7 +248,7 @@ img {
   vertical-align: super;
 }
 .features-table td {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 45px;
   line-height: 64px;
 }
@@ -289,15 +316,102 @@ img {
 /* Footer */
 
 .footer-discount h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 500;
   font-size: 36px;
   line-height: 36px;
 }
 
 .footer-discount p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
+}
+
+/* catalog-title */
+.catalog-title {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 55px;
+  width: 1440px;
+  height: 241px;
+  background-color: var(--basic-light);
+}
+/* Catalog*/
+.catalog-list {
+  list-style: none;
+}
+.catalog-popup {
+  width: 360px;
+  height: 231px;
+  background-color: var(--basic-light);
+  opacity: 0;
+}
+.catalog-popup:hover {
+  opacity: 1;
+}
+.browser {
+  width: 360px;
+  height: 40px;
+  background-color: var(--basic-dark);
+  opacity: 0.12;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.browser span {
+  display: inline-block;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.browser:hover {
+  opacity: 1;
+}
+
+/* filter-catalog*/
+.filter-list {
+  list-style: none;
+}
+.filter-item {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.filter-list input:nth-of-type(1) {
+  opacity: 0.4;
+}
+.filter-list input:hover {
+  color: var(--basic-black);
+}
+
+.filter-range input {
+  background: #eeeeee;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.filter-range label {
+  text-transform: uppercase;
+}
+
+/*breadcrumbs*/
+.breadcrumbs-item {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.3;
+}
+.breadcrumbs-item:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.breadcrumbs-item:active {
+  opacity: 1;
+}
+.breadcrumbs-list {
+  list-style: none;
 }
