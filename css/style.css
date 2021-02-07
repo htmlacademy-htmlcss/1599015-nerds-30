@@ -52,11 +52,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-.page {
-  height: 100%;
-}
-
-/* Main header*/
 
 /* Main navigation */
 
@@ -69,10 +64,7 @@ img {
   background-color: var(--basic-light);
   text-transform: uppercase;
 
-  min-width: 1157px;
-  height: 114px;
-  display: grid;
-  grid-template-columns: max-content 1fr max-content;
+  min-width: 1440px;
 }
 
 .site-navigation {
@@ -199,22 +191,17 @@ img {
 
 .about-us-list {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* Services */
 
-.services li{
-  justify-self:center;
-}
 .services-list {
   list-style: none;
   font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 500;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  
+  column-gap: 80px;
 }
 
 .services-item1 {
@@ -291,13 +278,10 @@ img {
   border-bottom: 2px solid var(--basic-light);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  
 }
 
 .partners-item {
   list-style: none;
-  justify-self: center;
- 
 }
 .partners-item {
   opacity: 0.2;
@@ -368,13 +352,6 @@ input {
 }
 /* Footer */
 
-.footer-social-wrapper {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-}
-.footer-discount {
-  justify-self: end;
-}
 .footer-discount h2 {
   font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 500;
