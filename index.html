@@ -16,16 +16,16 @@
         <a class="main-header-logo" href="">
           <img src="img/nerds_logo.svg" width="159" height="65" alt="logo" />
         </a>
-        <div class="main-navigation-wrapper">
-          <div class="container">
-            <ul class="site-navigation">
-              <li><a href="">Студия</a></li>
-              <li><a href="#">Клиенты</a></li>
-              <li><a href="catalog.html">Магазин</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-            <a class="basket-navigation" href="#">Корзина</a>
-          </div>
+
+        <ul class="site-navigation">
+          <li><a href="">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+
+        <div class="basket-navigation">
+          <a class="basket-link" href="#">Корзина</a>
         </div>
       </nav>
     </header>
@@ -88,41 +88,49 @@
       </section>
       <section class="features">
         <h2>Наши преимущества</h2>
-        <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-        <p>
-          Исповедуем принципы минимализма и чистоты. Ставим математический
-          расчет превыше креатива. Работаем не покладая рук, как роботы.
-        </p>
-        <h3>Выполняем заказы на разработку:</h3>
-        <ul class="features-list">
-          <li class="features-item">Веб-сайтов любой сложности</li>
-          <li class="features-item">Мобильных приложений для iOS и Android</li>
-          <li class="features-item">
-            Слайдшоу и видео для корпоративных презентаций
-          </li>
-        </ul>
-        <img
-          class="features-logo"
-          src="img/nerds_illustration_1.jpg"
-          width="360"
-          height="208"
-          alt="nerds_logo"
-        />
-        <table class="features-table">
-          <caption class="features-heading">
-            с 2004 года Любим точность во всем:
-          </caption>
-          <tr>
-            <td>146<span>%</span></td>
-            <td>100<span>%</span></td>
-            <td>50<span>%</span></td>
-          </tr>
-          <tr>
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение сроков</td>
-            <td>Минимальная предоплата</td>
-          </tr>
-        </table>
+        <div class="features-block">
+          <div>
+            <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+            <p>
+              Исповедуем принципы минимализма и чистоты. Ставим математический
+              расчет превыше креатива. Работаем не покладая рук, как роботы.
+            </p>
+            <h3>Выполняем заказы на разработку:</h3>
+            <ul class="features-list">
+              <li class="features-item">Веб-сайтов любой сложности</li>
+              <li class="features-item">
+                Мобильных приложений для iOS и Android
+              </li>
+              <li class="features-item">
+                Слайдшоу и видео для корпоративных презентаций
+              </li>
+            </ul>
+          </div>
+          <div class="features-block-wrapper">
+            <img
+              class="features-logo"
+              src="img/nerds_illustration_1.jpg"
+              width="360"
+              height="208"
+              alt="nerds_logo"
+            />
+            <table class="features-table">
+              <caption class="features-heading">
+                с 2004 года Любим точность во всем:
+              </caption>
+              <tr>
+                <td>146<span>%</span></td>
+                <td>100<span>%</span></td>
+                <td>50<span>%</span></td>
+              </tr>
+              <tr>
+                <td>Уровень самоотдачи</td>
+                <td>Соблюдение сроков</td>
+                <td>Минимальная предоплата</td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </section>
       <section class="partners">
         <h2>Наши партнеры</h2>
@@ -186,22 +194,24 @@
         </p>
         <button class="button" type="button">Напишите нам</button>
       </div>
-      <div class="footer-social">
-        <ul>
-          <li class="social-link-block">
-            <a class="social-link vk" href="#"> </a>
-          </li>
-          <li class="social-link-block">
-            <a class="social-link fb" href="#"></a>
-          </li>
-          <li class="social-link-block">
-            <a class="social-link instagram" href="#"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-discount">
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-social-wrapper">
+        <div class="footer-social">
+          <ul>
+            <li class="social-link-block">
+              <a class="social-link vk" href="#"> </a>
+            </li>
+            <li class="social-link-block">
+              <a class="social-link fb" href="#"></a>
+            </li>
+            <li class="social-link-block">
+              <a class="social-link instagram" href="#"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-discount">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
     <section class="popup">
