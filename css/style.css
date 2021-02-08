@@ -44,7 +44,7 @@
   grid-template-rows: min-content 1fr min-content;
 }
 
-a {
+.page-body a {
   text-decoration: none;
   color: var(--basic-black);
 }
@@ -380,6 +380,12 @@ input {
 .catalog-list {
   list-style: none;
   color: var(--basic-black);
+
+  width: min-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 20px;
 }
 
 .catalog-list h3:hover {
