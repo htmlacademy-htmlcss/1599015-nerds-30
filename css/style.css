@@ -512,6 +512,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding-bottom: 70px;
+  padding-top: 70px;
 }
 .footer-discount {
   margin-right: 300px;
