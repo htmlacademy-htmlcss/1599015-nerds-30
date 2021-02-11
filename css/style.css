@@ -61,7 +61,10 @@ h6 {
 p {
   margin: 0;
 }
-
+button,
+a {
+  cursor: pointer;
+}
 /* Global */
 .page-body {
   margin: 0;
@@ -401,6 +404,7 @@ img {
 
 .partners-item {
   list-style: none;
+
 }
 .partners-item {
   opacity: 0.2;
@@ -456,13 +460,12 @@ fieldset {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  
 }
-.filter-list li{
-margin-bottom: 30px;
+.filter-list li {
+  margin-bottom: 30px;
 }
 .filter-list li:last-of-type {
-  margin:0;
+  margin: 0;
 }
 .filter-range input {
   width: 80px;
@@ -472,7 +475,7 @@ margin-bottom: 30px;
 }
 form button {
   width: 260px;
-height: 50px;
+  height: 50px;
 }
 
 fieldset legend {
@@ -526,7 +529,6 @@ input {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  
 }
 .footer-contacts {
   width: 319px;
@@ -540,19 +542,17 @@ input {
   position: absolute;
   left: 400px;
   top: 10px;
-  
 }
 .footer-contacts a {
   color: var(--basic-black);
 }
 .footer-contacts h3,
 .footer-contacts p {
-  margin-bottom:25px ;
+  margin-bottom: 25px;
 }
 .footer-contacts button {
   width: 219px;
   height: 50px;
-  
 }
 .main-footer {
   display: flex;
@@ -569,7 +569,6 @@ input {
 .footer-social ul {
   display: flex;
   min-width: 220px;
-  
 }
 
 .footer-social-wrapper {
@@ -725,7 +724,7 @@ input {
   list-style: none;
 }
 .sorting-for-page-list li:first-child,
-.sorting-for-page-list li:nth-last-child(2){
+.sorting-for-page-list li:nth-last-child(2) {
   opacity: 1;
 }
 /*Popup*/
