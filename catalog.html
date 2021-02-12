@@ -31,9 +31,8 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="main-catalog">
       <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-
       <div class="container">
         <div class="catalog-page">
           <section>
@@ -109,19 +108,23 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="button grey" type="submit">Показать</button>
+              <button class="button grey filter-button" type="submit">
+                Показать
+              </button>
             </form>
           </section>
 
           <section class="catalog">
-            <div class="sorting-for-page">
+            <div class="catalog-filter">
               <h3>Сортировать:</h3>
-              <ul class="sorting-for-page-list">
-                <li class="sorting-for-page-item">По цене</li>
-                <li class="sorting-for-page-item">По типу</li>
-                <li class="sorting-for-page-item">По названию</li>
-                <li class="sorting-for-page-item">▼</li>
-                <li class="sorting-for-page-item">▲</li>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item active">По цене</li>
+                <li class="catalog-filter-item">По типу</li>
+                <li class="catalog-filter-item">По названию</li>
+              </ul>
+              <ul class="catalog-filter-list" >
+                <li class="catalog-filter-item active">▼</li>
+                <li class="catalog-filter-item">▲</li>
               </ul>
             </div>
             <h2 class="visually-hidden">Макеты</h2>
@@ -133,7 +136,7 @@
                   height="578"
                   alt="sedona"
                 />
-                <div class="catalog-popup popup-window">
+                <div class="catalog-item-info">
                   <h3>SEDONA</h3>
                   <p>
                     Информационный сайт<br />
@@ -149,7 +152,7 @@
                   height="578"
                   alt="pink"
                 />
-                <div class="catalog-popup popup-window">
+                <div class="catalog-item-info">
                   <h3>PINK APP</h3>
                   <p>
                     Продуктовый лендинг<br />
@@ -165,7 +168,7 @@
                   height="578"
                   alt="borodinski"
                 />
-                <div class="catalog-popup popup-window">
+                <div class="catalog-item-info">
                   <h3>Barbershop</h3>
                   <p>Сайт салона красоты.<br />Для мужчин, да.</p>
                   <button class="button" type="button">9900 ₽</button>
@@ -178,7 +181,7 @@
                   height="578"
                   alt="mishka"
                 />
-                <div class="catalog-popup popup-window">
+                <div class="catalog-item-info">
                   <h3>MISHKA</h3>
                   <p>
                     Интернет-магазин<br />
@@ -194,7 +197,7 @@
                   height="578"
                   alt="aplus"
                 />
-                <div class="catalog-popup popup-window">
+                <div class="catalog-item-info">
                   <h3>A Plus</h3>
                   <p>
                     Лендинг курсов повышения<br />
@@ -210,7 +213,7 @@
                   height="578"
                   alt="kvas"
                 />
-                <div class="catalog-popup popup-window">
+                <div class="catalog-item-info">
                   <h3>КВАСТ</h3>
                   <p>
                     Промо-сайт производителя<br />
