@@ -86,6 +86,7 @@ a {
   margin: 0 auto;
   width: 1157px;
 }
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -258,7 +259,12 @@ img {
   line-height: 24px;
   margin-bottom: 25px;
 }
-
+.slider .button {
+  padding: 15px 55px;
+}
+.services-item .button {
+  padding: 15px 40px;
+}
 /* Services */
 
 .services-list {
@@ -483,7 +489,7 @@ fieldset legend {
   font-size: 18px;
   line-height: 30px;
 }
-fieldset {
+.catalog-page fieldset {
   width: 260px;
   margin-bottom: 50px;
 }
@@ -725,19 +731,26 @@ input {
   opacity: 1;
 }
 /*Popup*/
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+.popup h2 {
+  align-self: start;
+}
 .popup {
   width: 960px;
   height: 590px;
   background-color: var(--basic-white);
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+  flex-wrap: wrap;
+  justify-content: space-around;
   position: relative;
-  border: 1px solid red;
+  background:var(--basic-white);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
+
 .popup-close:before {
   content: url("../img/close.svg");
   opacity: 0.3;
@@ -758,3 +771,33 @@ input {
   right: 90px;
   top: 78px;
 }
+
+.feedback-name,
+.feedback-email {
+  width: 360px;
+  height: 77px;
+}
+.feedback-form-personal {
+  display: flex;
+  justify-content: space-between;
+}
+.feedback-form-message {
+  display: flex;
+  flex-direction: column;
+}
+.feedback-form .button {
+  width: 259px;
+  height: 50px;
+}
+.feedback-form label {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.feedback-text {
+  width: 760px;
+  height: 145px;
+}
+

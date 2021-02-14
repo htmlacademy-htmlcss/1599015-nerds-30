@@ -257,7 +257,7 @@
         </div>
       </div>
     </footer>
-    <section hidden>
+    <section class="popup">
       <h2>Напишите нам</h2>
 
       <form
@@ -265,27 +265,29 @@
         action="https://echo.htmlacademy.ru"
         method="POST"
       >
-        <p>
-          <label for="name">Ваше имя:</label>
-          <input
-            class="feedback-name"
-            id="name"
-            type="text"
-            name="infoname"
-            placeholder="Имя Фамилия"
-          />
-        </p>
-        <p>
-          <label for="email">Ваш email:</label>
-          <input
-            class="feedback-email"
-            id="email"
-            type="email"
-            name="email"
-            placeholder="email@example.com"
-          />
-        </p>
-        <p>
+        <fieldset class="feedback-form-personal">
+          <div>
+            <label for="name">Ваше имя:</label>
+            <input
+              class="feedback-name"
+              id="name"
+              type="text"
+              name="infoname"
+              placeholder="Имя Фамилия"
+            />
+          </div>
+          <div>
+            <label for="email">Ваш email:</label>
+            <input
+              class="feedback-email"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+            />
+          </div>
+        </fieldset>
+        <fieldset class="feedback-form-message">
           <label for="text">Текст письма:</label>
           <input
             class="feedback-text"
@@ -294,9 +296,11 @@
             name="message"
             placeholder="В свободной форме"
           />
-        </p>
+          
+        </fieldset>
         <button class="button" type="submit">Отправить</button>
       </form>
+
       <button class="popup-close" type="button"></button>
     </section>
   </body>
