@@ -46,6 +46,9 @@
 }
 
 /* Reset styles */
+* {
+  box-sizing: border-box;
+}
 ul,
 ol {
   padding: 0;
@@ -116,23 +119,29 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-light);
   text-transform: uppercase;
-  padding-top: 50px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  min-width: 1160px;
 }
 .site-navigation a,
 .basket-link {
   color: var(--basic-black);
 }
+.main-header-logo {
+  margin-right: 200px;
+}
+.site-navigation li {
+  margin-right: 45px;
+}
 .site-navigation {
   list-style: none;
-  min-width: 430px;
+  min-width: 437px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin-right: 45px;
+  margin-right: 200px;
 }
 
 .main-header-logo:active {
@@ -235,20 +244,28 @@ img {
 /* About us */
 .about-us {
   background-color: var(--basic-light);
-  margin-bottom: 80px;
-  position: relative;
+  margin-bottom: 70px;
+  
+  min-width: 1160px;
 }
 .slider-scroll {
   position: absolute;
-  top: 330px;
-  left: 950px;
+  top: 450px;
+  left: 600px;
 }
+
 .slider {
   min-height: 430px;
-  background-position: right;
+  min-width: 1160px;
+  background-position: 100% 50%;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+ 
+}
+.slider div {
+  margin-bottom: 40px;
+  position: relative;
 }
 .about-us-item1 {
   background-image: url(../img/nerds_index_slide1.png);
@@ -268,7 +285,7 @@ img {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 .about-us p {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -276,7 +293,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 55px;
 }
 .slider .button {
   padding: 15px 55px;
@@ -292,15 +309,16 @@ img {
   font-weight: 500;
   display: flex;
   justify-content: space-between;
-  margin-right: 60px;
-  flex-wrap: wrap;
+  margin-bottom: 10px;
 }
-
+.services-list .services-item:not(:last-child) {
+  margin-right: 100px;
+}
 .services-item {
   background-position: top;
   background-repeat: no-repeat;
-  padding-top: 150px;
-  width: 300px;
+  padding-top: 145px;
+  min-width: 300px;
   margin-bottom: 80px;
 }
 .services-item1 {
@@ -322,23 +340,31 @@ img {
 .services-list p {
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 /* Features */
 .features-block {
   border-top: 2px solid var(--basic-light);
-  padding-top: 25px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 75px;
+  min-width: 1160px;
 }
-
+.features-block-wrapper {
+  padding-top: 75px;
+  min-width: 650px;
+  margin-right: 150px;
+}
+.features-block-wrapper h3 {
+  text-transform: uppercase;
+}
 .features-block-table {
   text-align: center;
 }
-.features-block-wrapper li {
-  padding-top: 10px;
+
+.features-list li {
+  padding-left: 35px;
 }
 .features {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -386,15 +412,20 @@ img {
 .features-item::before {
   content: "";
   position: absolute;
-  left: -30px;
-  top: 20px;
+  left: 0px;
+  top: 10px;
   width: 25px;
   height: 2px;
   background-color: var(--basic-red);
 }
 
 /* Features table */
-
+.features-block-table {
+  margin-top: 35px;
+}
+.features-block-table img{
+  margin-bottom: 37px;
+}
 .features-heading {
   font-family: inherit;
   font-style: normal;
@@ -406,6 +437,7 @@ img {
 
 .features-table span {
   vertical-align: super;
+  font-size: 25px;
 }
 
 .first-line {
@@ -419,11 +451,13 @@ img {
   font-size: 16px;
   line-height: 18px;
   margin-bottom: 0;
+  text-align: left;
 }
 
 /* Partners */
 .partners {
   margin-bottom: 80px;
+  
 }
 .partners-list {
   border-top: 2px solid var(--basic-light);
@@ -434,8 +468,15 @@ img {
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 0;
+  min-width: 1160px;
 }
-
+hr {
+  width: 2px;
+height: 52px;
+background-color: var(--basic-light);
+margin: 0;
+border: 0;
+}
 .partners-item {
   list-style: none;
 }
@@ -547,7 +588,10 @@ input {
   line-height: 36px;
   margin-bottom: 10px;
 }
-
+.footer-map {
+  position: relative;
+  width: 100%;
+}
 .footer-discount p {
   font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: 500;
@@ -564,8 +608,8 @@ input {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 400px;
-  bottom: 240px;
+  left: 410px;
+  bottom: 70px;
 }
 .footer-contacts a {
   color: var(--basic-black);
@@ -585,8 +629,9 @@ input {
 
 .map-marker {
   position: absolute;
-  left: 1010px;
-  bottom: 350px;
+  left: 600px;
+  bottom: 100px;
+  display: none;
 }
 
 .footer-social ul {
@@ -774,8 +819,8 @@ input {
   flex-wrap: wrap;
   justify-content: space-around;
   position: absolute;
-  top: 175vh;
-  left: 50vh;
+  bottom: 175px;
+  left: 500px;
   background: var(--basic-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   display: none;
