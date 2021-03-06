@@ -505,7 +505,11 @@ tbody {
   list-style: none;
   opacity: 0.2;
 }
-
+.partners-item:not(:last-child){
+  border-right: 2px solid var(--basic-light);
+  height: 52px;
+  padding-right: 45px;
+}
 
 .partners-item:hover {
   opacity: 1;
