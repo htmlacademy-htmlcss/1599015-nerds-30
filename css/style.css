@@ -500,19 +500,13 @@ tbody {
   align-items: center;
   margin-bottom: 0;
 }
-hr {
-  width: 2px;
-  height: 52px;
-  background-color: var(--basic-light);
-  margin: 0;
-  border: 0;
-}
+
 .partners-item {
   list-style: none;
-}
-.partners-item {
   opacity: 0.2;
 }
+
+
 .partners-item:hover {
   opacity: 1;
 }
@@ -702,6 +696,9 @@ input {
 .footer-map {
   position: relative;
   min-width: 100%;
+}
+.map {
+  width: 100%;
 }
 .footer-discount p {
   font-family: "Roboto", "Tahoma", sans-serif;
