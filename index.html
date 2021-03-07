@@ -272,7 +272,7 @@
         </div>
       </div>
     </footer>
-    <section class="popup visually-hidden">
+    <section class="popup popup-hidden">
       <form
         class="feedback-form"
         action="https://echo.htmlacademy.ru"
@@ -282,7 +282,7 @@
         <fieldset class="feedback-form-personal">
           <div>
             <label for="name">Ваше имя:</label>
-            <input
+            <input required
               class="feedback-name"
               id="name"
               type="text"
@@ -292,7 +292,7 @@
           </div>
           <div>
             <label for="email">Ваш email:</label>
-            <input
+            <input required
               class="feedback-email"
               id="email"
               type="email"
@@ -303,7 +303,7 @@
         </fieldset>
         <fieldset class="feedback-form-message">
           <label for="text">Текст письма:</label>
-          <textarea
+          <textarea required
             class="feedback-text"
             id="text"
             name="message"
