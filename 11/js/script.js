@@ -1,10 +1,11 @@
-let closeButton = document.querySelector(".popup-close");
-let openButton = document.querySelector(".openbutton");
-let popup = document.querySelector(".popup");
+const closeButton = document.querySelector(".popup-close");
+const openButton = document.querySelector(".openbutton");
+const popup = document.querySelector(".popup");
 
 openButton.onclick = function () {
-  popup.classList.remove("visually-hidden");
+  popup.classList.remove("popup-hidden");
 };
 closeButton.onclick = function () {
-  popup.classList.add("visually-hidden");
+  popup.classList.add("popup-hidden");
 };
+

@@ -172,7 +172,7 @@
         <h2 class="visually-hidden">Наши партнеры</h2>
         <div class="container">
           <ul class="partners-list">
-            <li class="partners-item partner">
+            <li class="partners-item">
               <a href="https://htmlacademy.ru/intensive/htmlcss"
                 ><img
                   src="img/partners_htmlacademy.svg"
@@ -182,7 +182,7 @@
               /></a>
             </li>
 
-            <li class="partners-item partner">
+            <li class="partners-item">
               <a href="#"
                 ><img
                   src="img/partners_borodinski.svg"
@@ -192,7 +192,7 @@
               /></a>
             </li>
 
-            <li class="partners-item partner">
+            <li class="partners-item">
               <a href="#"
                 ><img
                   src="img/partners_pink.svg"
@@ -273,7 +273,7 @@
         </div>
       </div>
     </footer>
-    <section class="popup visually-hidden">
+    <section class="popup popup-hidden">
       <form
         class="feedback-form"
         action="https://echo.htmlacademy.ru"
@@ -283,7 +283,7 @@
         <fieldset class="feedback-form-personal">
           <div>
             <label for="name">Ваше имя:</label>
-            <input
+            <input required
               class="feedback-name"
               id="name"
               type="text"
@@ -293,7 +293,7 @@
           </div>
           <div>
             <label for="email">Ваш email:</label>
-            <input
+            <input required
               class="feedback-email"
               id="email"
               type="email"
@@ -304,7 +304,7 @@
         </fieldset>
         <fieldset class="feedback-form-message">
           <label for="text">Текст письма:</label>
-          <textarea
+          <textarea required
             class="feedback-text"
             id="text"
             name="message"
