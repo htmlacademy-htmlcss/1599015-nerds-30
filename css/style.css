@@ -474,6 +474,7 @@ tbody {
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
+ 
 }
 
 .second-line {
@@ -987,7 +988,9 @@ margin-bottom: 30px;
   text-transform: uppercase;
   margin-right: 15px;
 }
-
+.catalog-filter-item.sort {
+  margin-right: 30px;
+}
 .catalog-filter-item:last-child {
   margin: 0;
 }
