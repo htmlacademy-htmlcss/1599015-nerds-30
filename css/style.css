@@ -1040,9 +1040,7 @@ input {
   background: var(--basic-white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
-.popup-hidden {
-  display: none;
-}
+
 .popup-close {
   opacity: 0.3;
 }
@@ -1119,7 +1117,11 @@ input {
   line-height: 18px;
 }
 /* Animation popup */
-.popup {
+.popup-hidden {
+  display: none;
+ 
+}
+.popup{
   animation-name: popup;
   animation-duration: 0.5s;
 }
