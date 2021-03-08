@@ -48,16 +48,16 @@
                   </div>
                 </div>
                 <input hidden id="price" type="range" min="0" max="15000" />
-                <label for="min-price">от</label>
-                <input
+                <label class="min-price" for="min-price">от</label>
+                <input class="from-number"
                   type="number"
                   id="min-price"
                   name="price"
                   value="0"
                   min="0"
                 />
-                <label for="max-price">до</label>
-                <input
+                <label class="max-price" for="max-price">до</label>
+                <input class="get-number"
                   type="number"
                   id="max-price"
                   name="price"
@@ -70,7 +70,7 @@
                 <legend>Сетка:</legend>
                 <ul class="filter-list">
                   <li>
-                    <input
+                    <input 
                       class="visually-hidden filter-input-radio"
                       id="filter-responsive"
                       type="radio"
@@ -80,7 +80,7 @@
                     <label for="filter-responsive">Адаптивная</label>
                   </li>
                   <li>
-                    <input
+                    <input 
                       class="visually-hidden filter-input-radio"
                       id="filter-fix"
                       type="radio"
@@ -89,7 +89,7 @@
                     <label for="filter-fix">Фиксированная</label>
                   </li>
                   <li>
-                    <input
+                    <input 
                       class="visually-hidden filter-input-radio"
                       id="filter-elastic"
                       type="radio"
