@@ -50,7 +50,8 @@
                 </div>
                 <input hidden id="price" type="range" min="0" max="15000" />
                 <label class="min-price" for="min-price">от</label>
-                <input class="from-number"
+                <input
+                  class="from-number"
                   type="number"
                   id="min-price"
                   name="price"
@@ -58,7 +59,8 @@
                   min="0"
                 />
                 <label class="max-price" for="max-price">до</label>
-                <input class="get-number"
+                <input
+                  class="get-number"
                   type="number"
                   id="max-price"
                   name="price"
@@ -71,7 +73,7 @@
                 <legend>Сетка:</legend>
                 <ul class="filter-list">
                   <li>
-                    <input 
+                    <input
                       class="visually-hidden filter-input-radio"
                       id="filter-responsive"
                       type="radio"
@@ -81,7 +83,7 @@
                     <label for="filter-responsive">Адаптивная</label>
                   </li>
                   <li>
-                    <input 
+                    <input
                       class="visually-hidden filter-input-radio"
                       id="filter-fix"
                       type="radio"
@@ -90,7 +92,7 @@
                     <label for="filter-fix">Фиксированная</label>
                   </li>
                   <li>
-                    <input 
+                    <input
                       class="visually-hidden filter-input-radio"
                       id="filter-elastic"
                       type="radio"
@@ -164,15 +166,23 @@
             <div class="catalog-filter">
               <h3>Сортировать:</h3>
               <ul class="catalog-filter-list">
-                <li tabindex="0" class="catalog-filter-item sort active">
-                  По цене
+                <li class="catalog-filter-item sort active">
+                  <button class="catalog-filter-button">По цене</button>
                 </li>
-                <li tabindex="0" class="catalog-filter-item sort">По типу</li>
-                <li tabindex="0" class="catalog-filter-item">По названию</li>
+                <li class="catalog-filter-item sort">
+                  <button class="catalog-filter-button">По типу</button>
+                </li>
+                <li class="catalog-filter-item">
+                  <button class="catalog-filter-button">По названию</button>
+                </li>
               </ul>
               <ul class="catalog-filter-list">
-                <li tabindex="0" class="catalog-filter-item active">▼</li>
-                <li tabindex="0" class="catalog-filter-item">▲</li>
+                <li class="catalog-filter-item active">
+                  <button class="catalog-filter-button">▼</button>
+                </li>
+                <li class="catalog-filter-item">
+                  <button class="catalog-filter-button">▲</button>
+                </li>
               </ul>
             </div>
             <h2 class="visually-hidden">Макеты</h2>
@@ -222,7 +232,7 @@
                   <button class="button" type="button">9900 ₽</button>
                 </div>
               </li>
-              <li  tabindex="0" class="catalog-item">
+              <li tabindex="0" class="catalog-item">
                 <img
                   src="img/maket_mishka.jpg"
                   width="358"

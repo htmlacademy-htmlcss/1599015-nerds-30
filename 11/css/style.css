@@ -119,12 +119,7 @@ img {
   border-bottom: 2px solid var(--basic-red);
 }
 
-.button.grey.active {
-  background-color: var(--basic-white);
-  border: 3px solid var(--border-button-color);
-  border-radius: 3px;
-  padding: 14px 18px 13px 18px;
-}
+
 .main-navigation {
   font-family: inherit;
   font-size: 16px;
@@ -237,13 +232,19 @@ img {
 .button.grey:hover {
   background-color: var(--basic-dark-grey);
 }
-.button.grey:active {
+.button.grey.active {
+  background-color: var(--basic-white);
+  border: 3px solid var(--border-button-color);
+  border-radius: 3px;
+  padding: 14px 17px 13px 17px;
+}
+.button.grey:active:not(:last-child) {
   color: rgba(0, 0, 0, 0.3);
   background: var(--basic-opacity-grey);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   border: none;
   padding: 17px 20px 15px 20px;
-}
+}   
 .pagination-list {
   list-style: none;
   display: flex;
@@ -487,7 +488,6 @@ tbody {
 
 .second-line {
   display: flex;
-  margin-right: -25px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -495,7 +495,9 @@ tbody {
   margin-bottom: 0;
   text-align: left;
 }
-
+.second-line th {
+  margin-right: 25px;
+}
 /* Partners */
 .partners {
   margin-bottom: 80px;
@@ -513,19 +515,19 @@ tbody {
 }
 .partners-list li:nth-child(1) {
   margin-top: 5px;
-  margin-left: -15px;
+  margin-left: 15px;
 }
 .partners-list li:nth-child(2) {
-  margin-top: -35px;
-  margin-left: -45px;
+  margin-right: 10px;
+  margin-bottom: 25px;
 }
 .partners-list li:nth-child(3) {
   margin-top: 15px;
-  margin-left: -45px;
+  margin-right: 35px;
 }
 .partners-list li:nth-child(4) {
   margin-top: 15px;
-  margin-left: -25px;
+  margin-right: 15px;
 }
 .partners-item {
   list-style: none;
@@ -587,7 +589,6 @@ fieldset {
   text-transform: uppercase;
   margin-bottom: 15px;
   padding-top: 6px;
-  margin-left: -15px;
 }
 .filter-list li {
   margin-bottom: 20px;
@@ -596,6 +597,7 @@ fieldset {
 .filter-list li:last-of-type {
   margin: 0;
 }
+
 .filter-range input {
   width: 80px;
   height: 38px;
@@ -607,7 +609,9 @@ fieldset {
   height: 50px;
   margin-top: 20px;
 }
-
+fieldset {
+  padding-left: 0;
+}
 fieldset legend {
   font-family: "Roboto", "Tahoma", sans-serif;
   font-style: normal;
@@ -651,18 +655,19 @@ input {
   display: block;
   cursor: pointer;
   user-select: none;
-  padding-left: 25px;
+  padding-left: 35px;
 }
 .filter-input-radio + label:before {
   content: "";
   position: absolute;
   width: 15px;
   height: 15px;
-  left: -15px;
-  top: -6px;
+  left: -4px;
+  top: -5px;
   border: 5px solid var(--basic-dark);
   border-radius: 50%;
   opacity: 0.4;
+  
 }
 .filter-input-radio:checked + label:after {
   content: "";
@@ -671,15 +676,15 @@ input {
   height: 9px;
   border-radius: 50%;
   background-color: var(--basic-dark);
-  left: -7px;
-  top: 2px;
+  left: 4px;
+  top: 3px;
   opacity: 0.4;
 }
 .filter-input-checkbox + label:before {
   content: "";
   position: absolute;
-  left: -15px;
-  top: -5px;
+  left: -1px;
+  top: -1px;
   width: 23px;
   height: 23px;
   background-image: url(../img/checkbox-off.svg);
@@ -698,8 +703,8 @@ input {
   background-size: 23px 23px;
   width: 23px;
   height: 23px;
-  left: -15px;
-  top: -5px;
+  left: -1px;
+  top: -1px;
   opacity: 0.4;
 }
 .filter-input-radio:disabled + label::before,
@@ -769,14 +774,14 @@ input {
 }
 .footer-contacts h3,
 .footer-contacts p {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .footer-contacts h3 {
   padding-top: 10px;
 }
 .footer-contacts p {
-  line-height: 15px;
-  margin-bottom: -5px;
+  line-height: 17px;
+  margin-bottom: 1px;
 }
 
 .footer-contacts button {
@@ -889,11 +894,10 @@ input {
   opacity: 0;
 }
 .catalog-item-info button {
-  margin-bottom: 35px;
+  margin-bottom: 42px;
 }
 .catalog-item-info h3 {
   padding-top: 17px;
-  margin-bottom: -15px;
 }
 .catalog-list {
   margin-bottom: 55px;
@@ -902,8 +906,11 @@ input {
 .catalog-item-info button {
   width: 200px;
   height: 50px;
+  margin-top: 9px;
 }
-
+.catalog-item-info p {
+  line-height: 20px;
+}
 .catalog-item::after {
   content: "";
   position: absolute;
@@ -965,7 +972,16 @@ input {
   margin-bottom: 48px;
 }
 
-
+.catalog-filter-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+line-height: 18px;
+font-family: "Roboto", "Tahoma", sans-serif;
+font-weight: 500;
+}
 
 .catalog-filter h3 {
   text-transform: uppercase;
@@ -986,8 +1002,7 @@ input {
   background: var(--basic-light);
   border-radius: 3px;
   position: relative;
-  margin-bottom: 16px;
-  margin-top: -8px;
+  margin-bottom: 7px;
 }
 
 .range-controls .scale {
@@ -1034,10 +1049,10 @@ input {
   line-height: 18px;
   opacity: 0.3;
   text-transform: uppercase;
-  margin-right: 15px;
+  
 }
 .catalog-filter-item.sort {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 .catalog-filter-item:last-child {
   margin: 0;
