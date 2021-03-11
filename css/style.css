@@ -567,6 +567,7 @@ tbody {
 /* Form*/
 fieldset {
   border: none;
+  padding-left: 0;
 }
 
 .filter-range {
@@ -609,9 +610,7 @@ fieldset {
   height: 50px;
   margin-top: 20px;
 }
-fieldset {
-  padding-left: 0;
-}
+
 fieldset legend {
   font-family: "Roboto", "Tahoma", sans-serif;
   font-style: normal;
