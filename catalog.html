@@ -43,8 +43,8 @@
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar"></div>
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-max"></div>
+                    <div tabindex="0" aria-label="Сортировать по цене минимальная" class="toggle toggle-min"></div>
+                    <div tabindex="0" aria-label="Сортировать по цене максимальная" class="toggle toggle-max"></div>
                   </div>
                 </div>
                 <input hidden id="price" type="range" min="0" max="15000" />
@@ -186,12 +186,12 @@
             </div>
             <h2 class="visually-hidden">Макеты</h2>
             <ul class="catalog-list">
-              <li tabindex="0" class="catalog-item">
+              <li class="catalog-item">
                 <img
                   src="img/maket_sedona.jpg"
                   width="358"
                   height="578"
-                  alt="sedona"
+                  alt="Макет Седона"
                 />
                 <div class="catalog-item-info">
                   <h3>SEDONA</h3>
@@ -202,12 +202,12 @@
                   <button class="button" type="button">9900 ₽</button>
                 </div>
               </li>
-              <li tabindex="0" class="catalog-item">
+              <li " class="catalog-item">
                 <img
                   src="img/maket_pink.jpg"
                   width="358"
                   height="578"
-                  alt="pink"
+                  alt="Макет Пинк"
                 />
                 <div class="catalog-item-info">
                   <h3>PINK APP</h3>
@@ -215,15 +215,15 @@
                     Продуктовый лендинг<br />
                     приложения для iOS и Android
                   </p>
-                  <button class="button" type="button">9900 ₽</button>
+                  <button class="button button-buy" type="button">9900 ₽</button>
                 </div>
               </li>
-              <li tabindex="0" class="catalog-item">
+              <li class="catalog-item">
                 <img
                   src="img/maket_borodinski.jpg"
                   width="358"
                   height="578"
-                  alt="borodinski"
+                  alt="Макет Бородинский"
                 />
                 <div class="catalog-item-info">
                   <h3>Barbershop</h3>
@@ -231,12 +231,12 @@
                   <button class="button" type="button">9900 ₽</button>
                 </div>
               </li>
-              <li tabindex="0" class="catalog-item">
+              <li  class="catalog-item">
                 <img
                   src="img/maket_mishka.jpg"
                   width="358"
                   height="578"
-                  alt="mishka"
+                  alt="Макет Мишка"
                 />
                 <div class="catalog-item-info">
                   <h3>MISHKA</h3>
@@ -247,12 +247,12 @@
                   <button class="button" type="button">9900 ₽</button>
                 </div>
               </li>
-              <li tabindex="0" class="catalog-item">
+              <li  class="catalog-item">
                 <img
                   src="img/maket_aplus.jpg"
                   width="358"
                   height="578"
-                  alt="aplus"
+                  alt="Макет Аплюс"
                 />
                 <div class="catalog-item-info">
                   <h3>A Plus</h3>
@@ -263,12 +263,12 @@
                   <button class="button" type="button">9900 ₽</button>
                 </div>
               </li>
-              <li tabindex="0" class="catalog-item">
+              <li class="catalog-item">
                 <img
                   src="img/maket_kvas.jpg"
                   width="358"
                   height="578"
-                  alt="kvas"
+                  alt="Макет Квас"
                 />
                 <div class="catalog-item-info">
                   <h3>КВАСТ</h3>
@@ -400,7 +400,7 @@
         </fieldset>
       </form>
 
-      <button class="popup-close" type="button">
+      <button aria-label="Закрыть форму обратной связи" class="popup-close" type="button">
         <svg
           width="21"
           height="21"
