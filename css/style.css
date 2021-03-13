@@ -867,7 +867,7 @@ input {
   box-shadow: 0 3px 10px rgb(0 1 1 / 30%);
 }
 .catalog-item:hover .catalog-item-info,
-.catalog-item:focus-within .catalog-item-info  {
+.catalog-item:focus-within .catalog-item-info {
   opacity: 1;
 }
 
