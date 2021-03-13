@@ -37,7 +37,7 @@
             <h2 class="visually-hidden">Фильтр товаров</h2>
 
             <form method="GET" action="https://echo.htmlacademy.ru">
-              <fieldset class="filter-range">
+              <fieldset class="filter-range form-wrapper">
                 <legend>Стоимость:</legend>
 
                 <div class="range-controls">
@@ -68,7 +68,7 @@
                 />
               </fieldset>
 
-              <fieldset class="filter-item">
+              <fieldset class="filter-item form-wrapper">
                 <legend>Сетка:</legend>
                 <ul class="filter-list">
                   <li>
@@ -101,7 +101,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="filter-item">
+              <fieldset class="filter-item form-wrapper">
                 <legend>Особенности:</legend>
                 <ul class="filter-list">
                   <li>
@@ -177,10 +177,10 @@
               </ul>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item active">
-                  <button class="catalog-filter-button">▼</button>
+                  <button aria-label="Сортировать по уменьшению цены" class="catalog-filter-button">▼</button>
                 </li>
                 <li class="catalog-filter-item">
-                  <button class="catalog-filter-button">▲</button>
+                  <button aria-label="Сортировать по увеличению цены" class="catalog-filter-button">▲</button>
                 </li>
               </ul>
             </div>
@@ -363,7 +363,7 @@
         method="POST"
       >
         <h2>Напишите нам</h2>
-        <fieldset class="feedback-form-personal">
+        <fieldset class="feedback-form-personal form-wrapper">
           <div>
             <label for="name">Ваше имя:</label>
             <input
@@ -387,7 +387,7 @@
             />
           </div>
         </fieldset>
-        <fieldset class="feedback-form-message">
+        <fieldset class="feedback-form-message form-wrapper">
           <label for="text">Текст письма:</label>
           <textarea
             required
