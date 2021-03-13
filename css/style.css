@@ -866,9 +866,11 @@ input {
 .catalog-item:hover {
   box-shadow: 0 3px 10px rgb(0 1 1 / 30%);
 }
-.catalog-item:hover .catalog-item-info {
+.catalog-item:hover .catalog-item-info,
+.catalog-item:focus-within .catalog-item-info  {
   opacity: 1;
 }
+
 .catalog-list h3:hover {
   color: var(--basic-red);
 }
