@@ -298,11 +298,11 @@ img {
 }
 .about-us-item2 {
   background-image: url(../img/nerds_index_slide2.png);
-  display: none;
+ 
 }
 .about-us-item3 {
   background-image: url(../img/nerds_index_slide3.png);
-  display: none;
+  
 }
 
 .about-us-title {
@@ -311,7 +311,7 @@ img {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  padding-top: 15px;
+  padding-top: 70px;
 }
 .about-us p {
   font-family: "Roboto", "Tahoma", sans-serif;
