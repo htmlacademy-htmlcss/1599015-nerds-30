@@ -206,10 +206,22 @@ img {
   width: 18px;
   height: 18px;
   border-radius: 50%;
+  position: relative;
+}
+.slider-button-active {
+  border-style: none;
+  background-color: var(--basic-white);
+  -webkit-box-shadow: inset 0px 0px 0px 5px var(--basic-white),
+    inset 0px 0px 0px 7px var(--basic-grey);
+  box-shadow: inset 0px 0px 0px 5px var(--basic-white),
+    inset 0px 0px 0px 7px var(--basic-grey);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
 }
 
 .slider-button:not(:last-child) {
-  margin-right: 17px;
+  margin-right: 14px;
 }
 .button.green {
   background-color: var(--basic-green);
@@ -297,7 +309,7 @@ img {
 .slider-scroll {
   position: absolute;
   top: 430px;
-  left: 905px;
+  left: 908px;
 }
 
 .slider {
@@ -513,14 +525,14 @@ tbody {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
   padding-bottom: 15px;
   margin-right: 55px;
+}
+.first-line td:not(:last-child) {
+  margin-right: 20px;
 }
 
 .second-line {
@@ -789,7 +801,7 @@ input {
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 6px;
 }
 
 .footer-map {
@@ -804,7 +816,6 @@ input {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 5px;
 }
 .footer-contacts {
   width: 319px;
@@ -825,24 +836,24 @@ input {
   bottom: 60px;
 }
 .footer-contacts a {
-  padding-top: 22px;
+  padding-top: 15px;
   color: var(--basic-black);
 }
-.footer-contacts h3,
-.footer-contacts p {
-  margin-bottom: 20px;
+.footer-contacts h3 {
+  margin-bottom: 25px;
 }
 .footer-contacts h3 {
   padding-top: 10px;
 }
 .footer-contacts p {
   line-height: 17px;
-  margin-bottom: 1px;
+ 
 }
 
 .footer-contacts button {
   width: 219px;
   height: 50px;
+  margin-left: 3px;
 }
 .main-footer {
   display: -webkit-box;
@@ -872,7 +883,8 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 60px;
+  padding-left: 1px;
+  padding-top: 63px;
   margin-bottom: 65px;
 }
 .footer-social {

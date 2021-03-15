@@ -25,25 +25,20 @@ sendForm.onclick = function () {
 
 //Слайд шоу
 
-
 let slideIndex = 1;
 showSlides(slideIndex);
-
 
 function plusSlide() {
   showSlides((slideIndex += 1));
 }
 
-
 function minusSlide() {
   showSlides((slideIndex -= 1));
 }
 
-
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
-
 
 function showSlides(n) {
   let i;
@@ -59,8 +54,8 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" slider-button-active", "");
   }
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  dots[slideIndex - 1].className += " slider-button-active";
 }
