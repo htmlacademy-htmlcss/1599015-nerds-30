@@ -110,6 +110,7 @@ a {
   height: 1px;
   margin: -1px;
 }
+
 .page-body a {
   text-decoration: none;
 }
@@ -323,8 +324,11 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: none;
 }
-
+.active-slide {
+  display: block;
+}
 .slider div {
   margin-bottom: 40px;
   position: relative;
@@ -847,7 +851,6 @@ input {
 }
 .footer-contacts p {
   line-height: 17px;
- 
 }
 
 .footer-contacts button {
