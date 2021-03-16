@@ -325,6 +325,7 @@ img {
   -ms-flex-align: center;
   align-items: center;
   display: none;
+  background-color: var(--basic-light);
 }
 .active-slide {
   display: block;
@@ -497,7 +498,7 @@ img {
 .features-block-table {
   margin-top: 35px;
 }
-tbody {
+.features-table tbody {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -709,7 +710,7 @@ tbody {
   border: 2px solid var(--basic-light-dark-red);
 }
 
-input {
+.page-body input {
   outline: none;
 }
 
@@ -814,6 +815,8 @@ input {
 }
 .map {
   width: 100%;
+  background: url(../img/map.png);
+  background-size: 100%;
 }
 .footer-discount p {
   font-family: "Roboto", "Tahoma", sans-serif;
@@ -853,11 +856,20 @@ input {
   line-height: 17px;
 }
 
-.footer-contacts button {
+.footer-contacts .button {
   width: 219px;
   height: 50px;
   margin-left: 3px;
+  color: var(--basic-white);
+  text-align: center;
 }
+.footer-contacts .button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: var(--basic-dark-red);
+  -webkit-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
 .main-footer {
   display: -webkit-box;
   display: -ms-flexbox;
