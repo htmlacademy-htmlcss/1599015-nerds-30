@@ -7,7 +7,8 @@ const inputName = document.querySelector(".feedback-name");
 const inputMessage = document.querySelector(".feedback-text");
 
 // open form
-openButton.onclick = function () {
+openButton.onclick = function (evt) {
+  evt.preventDefault();
   popup.classList.remove("popup-hidden");
 };
 closeButton.onclick = function () {
